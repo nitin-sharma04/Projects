@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini-clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <span class="material-symbols-outlined menu"> menu </span>
+      <div class="new-chat">
+        <span class="material-symbols-outlined add"> add </span
+        ><span class="text">New Chat</span>
+      </div>
+      <div class="recent">
+        Recent
+        <div class="recent-history">
+          <p>
+            <span class="material-symbols-outlined history-tab">
+              chat_bubble </span
+            >Hello World
+          </p>
+          <p>
+            <span class="material-symbols-outlined history-tab">
+              chat_bubble </span
+            >Hello World
+          </p>
+          <p>
+            <span class="material-symbols-outlined history-tab">
+              chat_bubble </span
+            >Hello World
+          </p>
+          <p>
+            <span class="material-symbols-outlined history-tab">
+              chat_bubble </span
+            >Hello World
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="settings">
+          <p>
+            <span class="material-symbols-outlined settings-icon"> help </span
+            ><span class="text">Help</span>
+          </p>
+          <p>
+            <span class="material-symbols-outlined settings-icon">
+              device_reset </span
+            ><span class="text">Activity</span>
+          </p>
+          <p>
+            <span class="material-symbols-outlined settings-icon">
+              settings </span
+            ><span class="text">Settings</span>
+          </p>
+        </div>
+        <div class="address">
+          <span class="material-symbols-outlined dot"> • </span>
+          <p>Lucknow, Uttar Pradesh</p>
+          <p>
+            <a href="#">From your IP address</a> •
+            <a href="#">Update location</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <div class="gemini">
+          Gemini
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+        <div class="right">
+          <div class="gem-adv">
+            <img
+              src="https://www.gstatic.com/lamda/images/gemini_sparkle_red_4ed1cbfcbc6c9e84c31b987da73fc4168aec8445.svg"
+              alt=""
+            />
+            Try Gemini Advanced
+          </div>
+          <span class="material-symbols-outlined"> apps </span>
+          <img
+            src="https://lh3.googleusercontent.com/ogw/AF2bZyiYs974rr3rsci12HnaS6I3xuk5IlWABRWYMnRYkcNp7w=s32-c-mo"
+            alt=""
+          />
+        </div>
+      </nav>
+      <div class="heading">
+        <span class="gradient-text">Hello, Nitin</span>
+        <p class="">How can I help you today?</p>
+      </div>
+      <div class="suggestions">
+        <div>
+          Give me ideas for what to do with what's in this script?<span
+            class="material-symbols-outlined"
+          >
+            description
+          </span>
+        </div>
+
+        <div>
+          Outline an organized & logical sales pitch for a new product<span
+            class="material-symbols-outlined"
+          >
+            draw
+          </span>
+        </div>
+        <div>
+          Write a product description for a new type of toothbrush<span
+            class="material-symbols-outlined"
+          >
+            draw
+          </span>
+        </div>
+        <div>
+          Help write SQL to generate a report
+          <span class="material-symbols-outlined"> code </span>
+        </div>
+      </div>
+      <div class="answer1"></div>
+      <div class="answer2"></div>
+      <div class="prompt">
+        <div class="textarea" contenteditable="true">Enter a Prompt Here</div>
+        <span class="material-symbols-outlined add_img">
+          add_photo_alternate
+        </span>
+        <span class="material-symbols-outlined mic"> mic </span>
+        <span class="material-symbols-outlined submit"> send </span>
+        <span class="material-symbols-outlined stop"> stop_circle </span>
+      </div>
+    </div>
+  </body>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module">
+    import { GoogleGenerativeAI } from "@google/generative-ai";
+  </script>
+  <script type="module" src="index.js"></script>
+</html>

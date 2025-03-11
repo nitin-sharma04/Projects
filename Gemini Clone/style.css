@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  transition: all 1s;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  background-color: black;
+  height: 100vh;
+}
+.sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease-in-out;
+}
+
+.material-symbols-outlined {
+  padding: 10px;
+  margin: 20px;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.material-symbols-outlined:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.material-symbols-outlined:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.new-chat {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.new-chat .add,
+.new-chat .text,
+.recent-history .history-tab,
+.settings-icon {
+  color: grey;
+  margin: 0;
+  padding: 0;
+}
+.new-chat .add:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.recent {
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+.recent-history p {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  color: rgb(214, 212, 212);
+  gap: 10px;
+}
+.settings p {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  color: rgb(214, 212, 212);
+  gap: 10px;
+  color: white;
+}
+.settings-icon {
+  color: white;
+}
+.settings-icon:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.address p {
+  font-size: 12px;
+  color: white;
+}
+.address {
+  display: grid;
+  grid-template-columns: 12px auto;
+  grid-template-rows: auto auto;
+}
+.dot {
+  margin: 0;
+  padding: 0;
+  width: 0px;
+  position: relative;
+  bottom: 6px;
+}
+
+.dot {
+  align-self: flex-start;
+  grid-row: span 2;
+}
+.container {
+  width: 100%;
+}
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container nav .material-symbols-outlined {
+  margin: 0;
+  padding: 0;
+}
+.container nav .gemini,
+.container nav .right {
+  color: white;
+  display: flex;
+  padding: 20px;
+  margin: 5px 20px;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-size: 20px;
+}
+
+.container nav .right {
+  display: flex;
+  gap: 20px;
+}
+
+.gem-adv {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  gap: 10px;
+}
+.gem-adv img {
+  height: 15px;
+  width: 15px;
+}
+.container nav .right img {
+  border-radius: 50%;
+}
+
+.heading {
+  color: grey;
+  font-size: 60px;
+  font-weight: 500;
+  /* background-color: #a66fba; */
+  width: 70%;
+  margin: 20px auto;
+  line-height: 70px;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #5082ee 0%, #a66fba 50%, #d66675 100%);
+  background-clip: text; /* Clip the background to the shape of the text */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  color: transparent; /* Ensure fallback transparency for older browsers */
+  font-size: 50px;
+  font-weight: 500;
+}
+.suggestions {
+  width: 70%;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: ; */
+  gap: 10px;
+  margin: auto;
+  margin-top: 100px;
+}
+.suggestions div {
+  padding: 10px;
+  position: relative;
+  /* text-align: justify; */
+  color: white;
+  width: 200px;
+  height: 200px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  text-wrap: wrap;
+}
+.suggestions div span {
+  position: absolute;
+  margin: 0;
+  /* padding: 0; */
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+}
+.suggestions div span:hover {
+  background-color: black;
+}
+
+.prompt {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+.prompt .textarea {
+  white-space: normal;
+  text-align: justify;
+  margin: auto;
+  -moz-text-align-last: center; /* Firefox 12+ */
+  text-align-last: left;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 65%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.511);
+  font-size: 18px;
+  min-height: 50px;
+  margin-right: 250px;
+  /* font-size: 18px; */
+  /* padding-left: 20px;
+  padding-right: 100px;
+  padding-top: 10px; */
+  padding-left: 20px;
+  padding-right: 150px;
+  text-wrap: wrap;
+}
+.prompt span {
+  position: absolute;
+  bottom: -15px;
+}
+
+.prompt .submit,
+.prompt .stop {
+  position: absolute;
+  right: 250px;
+  bottom: -15px;
+}
+
+.prompt .mic {
+  right: 250px;
+}
+.add_img {
+  right: 300px;
+}
+.answer1 {
+  color: white;
+}
+
+.question,
+.answer2 {
+  display: flex;
+  gap: 30px;
+  width: 80%;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.question img {
+  border-radius: 50%;
+}
+
+.answer2 {
+  color: white;
+  transition: all 1s;
+}
+.answer2 img {
+  height: 20px;
+  align-self: self-start;
+}
+.prompt .submit {
+  display: none;
+}
+.answer2 {
+  display: none;
+  min-height: 350px;
+  align-items: flex-start;
+}
+
+.prompt .stop {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+}
+
+a {
+  color: rgb(0, 140, 255);
+}
